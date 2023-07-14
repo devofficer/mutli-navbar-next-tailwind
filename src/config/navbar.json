@@ -1,0 +1,74 @@
+[
+    {
+        "label": "💸 Free",
+        "href": "/free"
+    },
+    {
+        "label": "🌟 Trials",
+        "href": "/trials"
+    },
+    {
+        "label": "🗄️ Categories",
+        "href": "/categories",
+        "children": [
+            {
+                "label": "All Categories",
+                "href": "/categories"
+            },
+            {
+                "label": "Sushi",
+                "href": "/category/sushi"
+            },
+            {
+                "label": "Steak",
+                "href": "/category/steak"
+            },
+            {
+                "label": "Pizza",
+                "href": "/category/pizza"
+            }
+        ]
+    },
+    {
+        "label": "🌎 Countries",
+        "href": "/countries",
+        "children": [
+            {
+                "label": "🌎 All Countries",
+                "href": "/countries"
+            },
+            {
+                "label": "🇨🇴 Colombia",
+                "href": "/country-colombia"
+            },
+            {
+                "label": "🇩🇪 Germany",
+                "href": "/country-germany"
+            },
+            {
+                "label": "🇳🇱 Netherlands",
+                "href": "/country-netherlands"
+            },
+            {
+                "label": "🇵🇪 Peru",
+                "href": "/country-peru"
+            },
+            {
+                "label": "🇷🇺 Russia",
+                "href": "/country-russia"
+            },
+            {
+                "label": "🇺🇦 Ukraine",
+                "href": "/country-ukraine"
+            },
+            {
+                "label": "🇬🇧 United Kingdom",
+                "href": "/country-united-kingdom"
+            },
+            {
+                "label": "🇺🇸 United States",
+                "href": "/country-united-states"
+            }
+        ]
+    }
+]
