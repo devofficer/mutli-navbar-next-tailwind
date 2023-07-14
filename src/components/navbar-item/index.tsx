@@ -9,14 +9,14 @@ type MenuItemProps = {
 }
 
 export type NavbarItemProps = MenuItemProps & {
-  children?: MenuItemProps[]
+  subItems?: MenuItemProps[]
 }
 
-export default function NavbarItem({label, href, children}: NavbarItemProps) {
+export default function NavbarItem({label, href, subItems}: NavbarItemProps) {
   return (
     <>
       {
-        !children ? 
+        !subItems ? 
         <a
           href={href}
           className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
@@ -40,7 +40,7 @@ export default function NavbarItem({label, href, children}: NavbarItemProps) {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              {children.map((item: MenuItemProps, idx: number) => 
+              {subItems.map((item: MenuItemProps, idx: number) => 
                 <Menu.Item key={idx}>
                   {({ active }) => (
                     <a
